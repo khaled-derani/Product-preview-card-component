@@ -1,0 +1,114 @@
+:root{
+    --main-color:hsl(158, 36%, 37%);
+    --main-color2:hsl(30, 38%, 92%);
+}
+
+body{
+    font-family: 'Fraunces';
+    font-family: 'Montserrat';
+    background: linear-gradient(136deg, rgb(2 104 66) 0%, rgb(56 157 118) 100%);
+}
+/* start */
+.main-cont{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 600px;
+    height: 450px;
+    border: 1px solid rgba(232, 0, 0, 0);
+    border-radius: 10px;
+    z-index: 10;
+    overflow: hidden;
+}
+.card{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+.card .image{
+    width: 300px;
+    height: 450px;
+}
+.card .image img{
+   width: 100%;
+   height: 100%;
+   transition: 0.3s;
+}
+.card .image:hover .hover-img{
+    display: none;
+}
+
+.text{
+    width: 300px;
+    height: 450px;
+    background-color: #ffffff;
+}
+.text h3{
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin:32px 32px 17px 32px;
+    line-height: 15.6px;
+}
+.text h1{
+    font-family: 'Fraunces';
+    margin: 0 32px;
+    font-size: 32px;
+    line-height: 32px;
+}
+.text p{
+    margin: 17px 32px;
+    font-size:14px;
+    line-height: 23px;
+    color: #5b6179;
+}
+
+.text .price{
+    font-size: 32px;
+    margin: 32px 154px 45px 32px;
+    font-family: 'Fraunces';
+    color: #3c8066;
+    position: relative;
+}
+.text .price::after{
+    content: "$169.99";
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat';
+    text-decoration: line-through;
+    position: absolute;
+    left: 128px;
+}
+.text a{
+    text-decoration: none;
+    font-size: 14px;
+    width: 107px;
+    height: 17px;
+    background-color: #3c8066;
+    padding: 15px 62px;
+    margin: 62px 37px 65px 32px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+.text a:hover{
+    border: 1px solid #3c8066;
+    border-radius: 10px;
+    color: #3c8066;
+    background-color: #ffffff;
+}
+/* footer */
+.footer a{
+    text-decoration: none;
+
+}
+.footer{
+    text-align: center;
+}
